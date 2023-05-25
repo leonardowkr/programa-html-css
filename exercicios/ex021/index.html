@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Modelo de caixas</title>
+    <style>
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        h1{
+            height: 100px;
+            width: 500px;
+            background-color: lightgray;
+            border-width: 10px;
+            border-style: solid;
+            border-color: darkgreen;
+            
+            padding: 10px 5px 3px 2px;
+            padding;
+        }
+        div{
+            width: 200px;
+            height: 100px;
+            background-color: rgb(0, 0, 150);
+            border-radius: 5px;
+            outline-width: 7px;
+            outline-style: solid;
+            outline-color: gray;
+        }
+        #botao{
+            padding: 31px 2px 2px 2px;
+            color: white;
+            text-align: center;
+
+        }
+        #linkcanal{
+            text-decoration: none;
+        }
+        #linkcanal:visited{
+            color:white;
+            text-decoration: none;
+        }
+        #linkcanal:hover{
+            color: white;
+        }
+    </style>
+</head>
+<body>
+    <h1>Exemplo de caixas box-level</h1>
+    <p>Parágrafos também são exemplos de box-level, mas os <a href="#"> links são exmplos de inline-level</a>. Vamos ver como tudo isso funciona.</p>
+    <div>
+        <p id="botao"><a id="linkcanal"  href="https://youtube.com/cursoemvideo">Clique aqui para conhecer meu canal!</a></p>
+    </div>
+</body>
+</html>
