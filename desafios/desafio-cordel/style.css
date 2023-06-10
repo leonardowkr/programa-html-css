@@ -15,8 +15,8 @@ header{
 }
 
 header h1{
-    font-family: 'Passion One',sans-serif;
-    font-size: 60px;
+    font-family: 'Passion One',cursive;
+    font-size: 70px;
     font-weight: bold;
     font-variant: small-caps;
 }
@@ -46,7 +46,7 @@ pre{
 }
 
 section.foto1{
-    background: black url('imagens/background001.jpg') no-repeat fixed center center;
+    background: gray url('imagens/background001.jpg') no-repeat fixed center center;
     background-size: cover;
 }
 
@@ -60,7 +60,7 @@ div{
     border-radius: 5px;
 }
 section.foto2{
-    background: black url('imagens/background002.jpg') no-repeat fixed center center;
+    background: gray url('imagens/background002.jpg') no-repeat fixed center center;
     background-size: cover;
 }
 
