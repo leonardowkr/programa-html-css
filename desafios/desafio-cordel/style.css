@@ -48,20 +48,23 @@ pre{
 section.foto1{
     background: gray url('imagens/background001.jpg') no-repeat fixed right center;
     background-size: cover;
+    
 }
 
 section.foto1 pre{
     color: white;
     display: inline-block;
+    text-shadow: 1px 1px 2px rgb(0, 0, 0);
 }
 div{
-    background-color: rgba(0, 0, 0, 0.44); 
+    background-color: rgba(0, 0, 0, 0.5); 
     padding: 10px;
     border-radius: 5px;
 }
 section.foto2{
     background: gray url('imagens/background002.jpg') no-repeat fixed right center;
     background-size: cover;
+    text-shadow: 1px 1px 2px rgb(0, 0, 0);
 }
 
 section.foto2 pre{
