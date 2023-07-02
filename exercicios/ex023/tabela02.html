@@ -5,6 +5,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <style>
+        caption{
+            background-color: lightblue;
+            border: 1px solid black;
+            color: black;
+            padding: 10px;
+            font-weight: bold;
+        }
         body{
             font-family: Arial, Helvetica, sans-serif;
         }
@@ -28,10 +35,11 @@
 <body>
     <h1>Uso de tabelas grandes</h1>
     <table>
+        <caption>População dos Estados do Brasil</caption>
         <thead>
             <tr>
-                <th>Estado</th>
-                <th>População</th>
+                <th scope="col">Estado</th>
+                <th scope="col">População</th>
             </tr>
         </thead>
         <tbody>
@@ -58,7 +66,7 @@
         </tbody>
         <tfoot>
             <tr>
-                <th>Total de Habitantes</th>
+                <th scope="row">Total de Habitantes</th>
                 <td class="num"> <strong>108.867.525</strong></td>
             </tr>
         </tfoot>
