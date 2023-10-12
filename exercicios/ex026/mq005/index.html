@@ -25,11 +25,13 @@
         </nav>
     </header>
     <main>
-        <article>
+        <article id="artigo">
             <h2>Testando Media Queries</h2>
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Beatae repudiandae in, ipsa autem corporis nobis debitis exercitationem aperiam, sapiente esse officiis quam perferendis illum eveniet quae repellendus tenetur repellat? Nobis, nisi. Dicta, ipsam. Ratione, id, veniam veritatis repellendus praesentium laudantium a pariatur consequatur perferendis similique quae! Laboriosam cupiditate ipsam beatae fugit excepturi vel magnam nemo ducimus esse nulla earum amet, aliquid quasi, labore nam, laudantium soluta culpa. Exercitationem minima vitae mollitia praesentium maiores facilis vel aspernatur magni ipsam? Facere ipsam quaerat officia veniam tenetur fuga, quis labore error itaque ex repellat necessitatibus impedit placeat harum optio fugit odit ipsa. Ea?</p>
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi aliquid dolorem in. Distinctio voluptatibus sunt, quasi officiis perferendis voluptate laborum dolorum ab quam facilis quisquam. Ratione corrupti impedit tenetur quae explicabo rem eum ipsum architecto quod temporibus ex fuga nam, commodi in atque dolorum minus voluptate, minima incidunt saepe error accusantium tempora? Facilis nemo consectetur exercitationem, voluptate quisquam cumque minima molestias nostrum dicta eius. Blanditiis sit accusantium optio atque cupiditate molestias maiores inventore nihil asperiores iusto, voluptatum eum, doloremque in rerum amet provident accusamus quaerat placeat eligendi eveniet commodi minima nisi! Vel cumque, repudiandae suscipit possimus tempora labore id. Tempora!</p>
+            
         </article>
+        <input type="button" id="botao" value="Click for a surprise" onclick="alteraImagem()">
     </main> 
     <script>
         function clicouMenu(){
@@ -47,6 +49,11 @@
             else{
                 itens.style.display='none'
             }
+        }
+        function alteraImagem(){
+            document.getElementById("artigo").style.backgroundImage="url('foto.jpg')"
+            document.getElementById("artigo").style.backgroundRepeat="no-repeat"
+            document.getElementById("artigo").style.backgroundSize="contain"
         }
     </script>
 </body>
