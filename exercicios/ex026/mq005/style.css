@@ -66,7 +66,7 @@ nav a:hover{
     transition: 0.25s;
     transition-delay: 0.1;
 }
-#botao{
+#botao,#botao1{
     background-color: gray;
     width: 200px;
     margin: 30px;

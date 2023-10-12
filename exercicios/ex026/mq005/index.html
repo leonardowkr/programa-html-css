@@ -32,6 +32,7 @@
             
         </article>
         <input type="button" id="botao" value="Click for a surprise" onclick="alteraImagem()">
+        <input type="button" id="botao1" value="Voltar À Mesmice" onclick="voltaImagem()">
     </main> 
     <script>
         function clicouMenu(){
@@ -54,6 +55,9 @@
             document.getElementById("artigo").style.backgroundImage="url('foto.jpg')"
             document.getElementById("artigo").style.backgroundRepeat="no-repeat"
             document.getElementById("artigo").style.backgroundSize="contain"
+        }
+        function voltaImagem(){
+            document.getElementById("artigo").style.backgroundImage="none"
         }
     </script>
 </body>
