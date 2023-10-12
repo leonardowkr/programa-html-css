@@ -50,6 +50,8 @@ article{
     padding: 20px;
     box-shadow: 0px 5px 10px #00000057;
     border-radius: 0px 0px 8px 8px;
+    background: black url(foto.jpg) no-repeat fixed center center;
+    background-size: contain;
 }
 article h2{
     padding: 8px;
