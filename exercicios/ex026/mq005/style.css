@@ -1,5 +1,6 @@
 @charset "UTF-8";
 
+
 *{
     padding: 0px;
     margin: 0px;
@@ -26,14 +27,14 @@ nav a{
 }
 #menu{
     display: block;
-    background-color: gray;
+    background-color: rgba(128, 128, 128, 0.514);
     text-align: center;
-    color: white;
+    color: black;
     padding: 10px;
 }
 #menu:hover{
-    background-color: white;
-    color: gray;
+    background-color: gray;
+    color: black;
     transition: 0.25s;
     transition-delay: 0.1s;
 }
@@ -63,3 +64,4 @@ nav a:hover{
     transition: 0.25s;
     transition-delay: 0.1;
 }
+
