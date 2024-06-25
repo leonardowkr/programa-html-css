@@ -9,5 +9,6 @@ h1,p{
 img{
     border-radius: 5%;
     width: 488px;
-    filter: grayscale(1);
+    filter: grayscale(100%);
+    
 }
