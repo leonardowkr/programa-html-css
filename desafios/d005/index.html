@@ -1,30 +1,101 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-</head>
-<body>
-    <h1> Minhas redes Sociais</h1>
-    <h2> Quem sou eu?</h2>
-    <img src="perfilRedondo.jpg" alt="Foto de perfil">
-    <p> 
-        Meu nome é <strong> Leonardo Wecker </strong>, sou estudante do 4° ano do curso Técnico em Mecatrônica no IFSul campus Novo Hamburgo/RS e atualmente estou estudando a tríplice de linguagens 
-        <abbr title="Hyper Text Markup Language">HTML</abbr> <abbr title="Cascading Style Sheets">CSS</abbr> e JavaScript.
-    </p>
-    <h2>Como falar comigo?</h2>
-    <p> <ul>
-        <li>
-            <img src="icone-facebook.png" alt="logo do facebook"><a href=" https://www.facebook.com/leonardo.wecker" rel="author" target="_blank">/leonardo.wecker</a> - Me acompanha lá no Facebook</li>
-        <li>
-            <img src="icone-instagram.png" alt="logo do instgram"><a href="https://www.instagram.com/_leoweck/" rel="author" target="_blank">/_leoweck</a> - Me segue lá no Instagram
-        </li>
-        <li>
-            <img src="icone-twitter.png" alt="logo do twitter"><a href="https://twitter.com/Leonardelo17" rel="author" target="_blank">/Leonardelo17</a>- Me segue lá no twitter
-        </li>
-    </ul></p>
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Document</title>
 
-</body>
+        <link
+            rel="stylesheet"
+            href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"
+            integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO"
+            crossorigin="anonymous"
+        />
+        <link rel="stylesheet" href="style.css" />
+    </head>
+    <body>
+        <h1>Quem sou eu?</h1>
+        <div>
+            <img
+                class="col-lg-2 col-5"
+                id="perfil"
+                src="perfil2.jpg"
+                alt="Foto de perfil"
+            />
+        </div>
+        <p class="col-lg-10 col-10">
+            Meu nome é <strong> Leonardo Wecker</strong>, sou formado Técnico em
+            Mecatrônica pelo Instituto Federal de Novo Hamburgo, estado do Rio
+            Grande do Sul. Depois de formado, agora estou cursando graduação em
+            Análise e Desenvolvimento de Sistemas, além de estar estudando no
+            meu horário livre as linguagens front-end HTML, CSS e JavaScript, já
+            no back-end, Java.
+        </p>
+        <h2>Projetos realizados</h2>
+        <p>Clique na imagem para conferir</p>
+        <div class="container">
+            <div class="row">
+                <div class="imagens">
+                    <a
+                        target="_blank"
+                        href="https://leonardowkr.github.io/javascript/javascript/js-curso-2-aula1/js-curso-2-aula_-/"
+                        ><img
+                            class="col-lg-10 col-10"
+                            src="projeto01.png"
+                            alt=""
+                    /></a>
+                </div>
+                <div class="imagens">
+                    <a
+                        target="_blank"
+                        href="https://leonardowkr.github.io/programa-html-css/desafios/d010/"
+                        ><img
+                            class="col-lg-10 col-10"
+                            src="projeto03.png"
+                            alt=""
+                    /></a>
+                </div>
+                <div class="imagens">
+                    <a
+                        target="_blank"
+                        href="https://leonardowkr.github.io/javascript/javascript/3411-praticando-logica-projeto_inicial/amigo-secreto/"
+                        ><img
+                            class="col-lg-10 col-10"
+                            src="projeto02.png"
+                            alt=""
+                    /></a>
+                </div>
+            </div>
+        </div>
+        <h2>Como falar comigo?</h2>
+        <ul>
+            <li>
+                <img src="icone-facebook.png" alt="logo do facebook" /><a
+                    href=" https://www.facebook.com/leonardo.wecker"
+                    rel="author"
+                    target="_blank"
+                    >/leonardo.wecker</a
+                >
+                - Me acompanha lá no Facebook
+            </li>
+            <li>
+                <img src="icone-instagram.png" alt="logo do instgram" /><a
+                    href="https://www.instagram.com/_leoweck/"
+                    rel="author"
+                    target="_blank"
+                    >/_leoweck</a
+                >
+                - Me segue lá no Instagram
+            </li>
+            <li>
+                <img src="icone-twitter.png" alt="logo do twitter" /><a
+                    href="https://twitter.com/Leonardelo17"
+                    rel="author"
+                    target="_blank"
+                    >/Leonardelo17</a
+                >- Me segue lá no twitter
+            </li>
+        </ul>
+    </body>
 </html>
