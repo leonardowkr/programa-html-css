@@ -36,3 +36,10 @@ li{
 #formulario{
     margin: auto;
 }
+.form-floating{
+    margin: 10px;
+}
+#apresentacao{
+    text-align: justify;
+    text-indent: 10%;
+}

@@ -6,31 +6,29 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <title>Document</title>
 
-        <link
-            rel="stylesheet"
-            href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"
-            integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO"
-            crossorigin="anonymous"
-        />
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
         <link rel="stylesheet" href="style.css" />
     </head>
     <body>
         <h1>Quem sou eu?</h1>
         <div>
             <img
-                class="col-lg-2 col-md-3 col-4"
+                class="col-lg-2 col-md-2 col-sm-3 col-4"
                 id="perfil"
                 src="perfil2.jpg"
                 alt="Foto de perfil"
             />
         </div>
-        <p class="col-lg-8 col-8">
-            Meu nome é <strong> Leonardo Wecker</strong>, sou formado Técnico em
-            Mecatrônica pelo Instituto Federal de Novo Hamburgo, estado do Rio
+        <p id="apresentacao" class="col-lg-8 col-10">
+            Meu nome é <strong> Leonardo Wecker</strong>, sou formado <strong>
+                Técnico em
+                Mecatrônica
+            </strong> pelo Instituto Federal de Novo Hamburgo (IFSul-NH), estado do Rio
             Grande do Sul. Depois de formado, agora estou cursando graduação em
-            Análise e Desenvolvimento de Sistemas, além de estar estudando no
-            meu horário livre as linguagens front-end HTML, CSS e JavaScript, já
-            no back-end, Java.
+            <strong>Análise e Desenvolvimento de Sistemas</strong> na Instituição Evangélica de Novo Hamburgo (IENH), além de estar estudando no
+            meu horário livre as linguagens front-end HTML, CSS e JavaScript e também no 
+            no back-end com Java.
         </p>
         <h2>Projetos realizados</h2>
         <p>Clique na imagem para conferir</p>
@@ -41,7 +39,7 @@
                         target="_blank"
                         href="https://leonardowkr.github.io/javascript/javascript/js-curso-2-aula1/js-curso-2-aula_-/"
                         ><img
-                            class="col-lg-8 col-10"
+                            class="col-lg-6 col-10"
                             src="projeto01.png"
                             alt=""
                     /></a>
@@ -51,7 +49,7 @@
                         target="_blank"
                         href="https://leonardowkr.github.io/programa-html-css/desafios/d010/"
                         ><img
-                            class="col-lg-8 col-10"
+                            class="col-lg-6 col-10"
                             src="projeto03.png"
                             alt=""
                     /></a>
@@ -61,7 +59,7 @@
                         target="_blank"
                         href="https://leonardowkr.github.io/javascript/javascript/3411-praticando-logica-projeto_inicial/amigo-secreto/"
                         ><img
-                            class="col-lg-8 col-10"
+                            class="col-lg-6 col-10"
                             src="projeto02.png"
                             alt=""
                     /></a>
@@ -69,52 +67,80 @@
             </div>
         </div>
         <h2>Como falar comigo?</h2>
-        <ul>
-            <li>
-                <img src="icone-facebook.png" alt="logo do facebook" /><a
-                    href=" https://www.facebook.com/leonardo.wecker"
-                    rel="author"
-                    target="_blank"
-                    >/leonardo.wecker</a
-                >
-                - Me acompanha lá no Facebook
-            </li>
-            <li>
-                <img src="icone-instagram.png" alt="logo do instgram" /><a
-                    href="https://www.instagram.com/_leoweck/"
-                    rel="author"
-                    target="_blank"
-                    >/_leoweck</a
-                >
-                - Me segue lá no Instagram
-            </li>
-            <li>
-                <img src="icone-twitter.png" alt="logo do twitter" /><a
-                    href="https://twitter.com/Leonardelo17"
-                    rel="author"
-                    target="_blank"
-                    >/Leonardelo17</a
-                >- Me segue lá no twitter
-            </li>
-        </ul>
-        <section>
+        <div class="container">
+            <div class="row">
+                <div class="col-10 col-lg-10">
+                    <ul>
+                        <li>
+                            <i class="fa fa-facebook-square"></i><a
+                                href=" https://www.facebook.com/leonardo.wecker"
+                                rel="author"
+                                target="_blank"
+                                >/leonardo.wecker</a
+                            >
+                            - Me acompanha lá no Facebook
+                        </li>
+                        <li>
+                            <i class="fa fa-instagram"></i><a
+                                href="https://www.instagram.com/_leoweck/"
+                                rel="author"
+                                target="_blank"
+                                >/_leoweck</a
+                            >
+                            - Me segue lá no Instagram
+                        </li>
+                        <!--<li>
+                            <i class="fa fa-twitter-square"></i><a
+                                href="https://twitter.com/Leonardelo17"
+                                rel="author"
+                                target="_blank"
+                                >/Leonardelo17</a
+                            >- Me segue lá no Twitter
+                        </li>-->
+                        <li>
+                            <i class="fa fa-linkedin-square">
+                                </i><a
+                                href="https://www.linkedin.com/in/leonardo-wecker/"
+                                rel="author"
+                                target="_blank"
+                                >/Leonardo Wecker</a
+                            >- Me acompanha lá no LinkedIn
+                            </i>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <!-- <section>
             <div class="container">
                 <div class="row">
-                    <div id="formulario" class="col-lg-7 col-8">
+                    <div id="formulario" class="form-floating col-lg-7 col-8">
                         <form>
-                            <div class="form-group">
-                                <label>Nome</label>
+                            <div class="form-floating form-group">
                                 <input type="text" class="form-control" placeholder="Insira o nome">
+                                <label>Nome</label>
+                                
                             </div>
-                            <div class="form-group">
-                                <label>E-mail</label>
+
+                            <div class="form-floating form-group">
                                 <input type="email" class="form-control" placeholder="Insira o e-mail">
+                                <label>E-mail</label>
                             </div>
-                            <button class="btn btn-primary">Cadastrar</button> 
+
+                            <div class="form-floating form-group"></div>
+                                <input type="text" class="form-control" placeholder="Insira sua mensagem">
+                                <label>E-mail</label>
+                            </div>
+                            <div class="form-floating form-group"></div>
+                                <button type="submit" class="btn btn-primary">Enviar</button> 
+
+                            </div>
+                            
                         </form>
                     </div>
                 </div>
             </div>
        </section>
+    -->
     </body>
 </html>
