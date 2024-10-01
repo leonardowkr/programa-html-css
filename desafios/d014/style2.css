@@ -3,7 +3,8 @@
 @import url('https://fonts.googleapis.com/css2?family=Abril+Fatface&family=PT+Serif:ital,wght@0,400;0,700;1,400;1,700&display=swap');
 
 header,footer{
-    background-color: #1E4C9A;
+    background-color: #54582f;
+    ;
 }
 
 footer>h1{
@@ -35,7 +36,7 @@ h1{
     font-weight: 700;
 }
 #creditos{
-    background-color: #1E4C9A;
+    background-color: #54582f;
     border-radius: 4px;
     color: white;
     padding: 5px 0px 5px 10px;
