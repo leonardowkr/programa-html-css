@@ -28,7 +28,9 @@ li{
     border-radius: 100%;
 
 }
-
+img{
+    border-radius: 5px;
+}
 .imagens{
     
     margin: 15px;
