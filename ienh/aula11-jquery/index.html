@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jquery</title>
+    <style>
+        p{
+            color: red;
+        }
+        .caixa{
+            width: 100px;
+            height: 100px;
+            background-color: green;
+        }
+        .caixa2{
+            width: 100px;
+            height: 100px;
+            background-color: pink;
+            border-radius: 50px;
+        }
+    </style>
+</head>
+<body>
+     
+     <p>Saudades de uma pizza</p>
+    <p id="chuva">Será que chove hoje?</p>
+    <p class="loteria">Hoje estou com tanta sorte que irei jogar na loteria</p>
+    <h4 id="diadoprofessor">Semana que vem é do professor e quero presente</h4>
+    <div class="diadefolga">
+        <p>O professor vai estar de folga no dia dos professores</p>
+        <p id="pixdoprofessor">Para deixar o professor feliz, por favor, façam um pix.</p>
+    </div>
+    <div class="caixa"></div>
+    <button id="botao">Hora do intervalo</button>
+    <input type="text" id="nome">
+    <form id="enviar" action="">
+        <input type="submit" value="Enviar">
+    </form>
+    <div class="caixa2"></div>
+    <button id="ocultar">Mostrar/Ocultar</button>
+    <button id="mover">Mover</button>
+    <button id="aumentar">Aumentar</button>
+    <button id="diminuir">Diminuir</button>
+    <div id="carregarDados">    </div>
+    <button id="carregar">Carregar dados</button>
+    <script src="https://code.jquery.com/jquery-3.7.1.js" integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4=" crossorigin="anonymous"></script>
+    <!-- Seletores-->
+     <script>
+        $('p').css('color','blue'); // Padrão de seletor
+        $('#chuva').hide();
+        $('.loteria').fadeOut();
+     </script>
+     <!-- Manipuladores -->
+      <script>
+        $('#diadoprofessor').text('To brincando, vocês são meus presentes');
+        $('.diadefolga').append('<p>E os alunos também</p>');
+        $('#pixdoprofessor').remove();
+      </script>
+      <!-- Eventos -->
+       <script>
+        $('#botao').click(
+            function(){
+                alert('haaaaa! Pegadinha do malandro, Não tem intervalo')
+            }
+        );
+        $('.caixa').hover(
+            function(){
+                $(this).css('background-color','red');
+            },
+            function(){
+                $(this).css('background-color','green')
+            }
+        )
+        $('#nome').focus(
+            function(){
+                $(this).css('background-color','yellow');
+            }
+        )
+        $('#nome').blur(
+            function(){
+                $(this).css('background-color','white');
+            }
+        )
+        $('#enviar').submit(
+            function(){
+                alert('Formulário enviado com sucesso');
+            }
+        );
+       </script>
+       <!-- Efeitos e animações-->
+       <script>
+        $('#ocultar').click(
+            function(){
+                $('.caixa2').toggle();
+            }
+        ); // Alterna entre mostrar e esconder
+        $('#mover').click(
+            function(){
+                $('.caixa2').animate(
+                    {
+                        'margin-left': '250px',
+                        opacity: '1.0',
+                    },1000
+                );
+            }
+        )
+        $('#aumentar').click(
+            function(){
+                $('.caixa2').animate(
+                    {
+                        'width': '+=50px',
+                         'height': '+=50px'
+                    },1000
+                )
+                
+            }
+        )
+        $('#diminuir').click(
+            function(){
+                $('.caixa2').animate(
+                {
+                    'width': '-=50px',
+                    'height': '-=50px'
+                },1000
+            )
+            }
+        )        
+       </script>
+       <!-- Ajax  -->
+        <script>
+            $('#carregar').click(
+                function(){
+                    $.get('http://api.exemplo.com/', function
+                        (data){
+                            $('#carregarDados').html(data);
+                        });
+                }
+            )
+        </script>
+</body>
+</html>
