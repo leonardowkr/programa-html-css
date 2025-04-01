@@ -6,6 +6,9 @@ body{
     background-size: cover;
     background-repeat: no-repeat;
 }
+h1{
+    margin: 24px 0px 16px 0px;
+}
 h1,h2,p,li{
     color:white;
     font-family: Arial, Helvetica, sans-serif;
@@ -15,20 +18,44 @@ h1,h2,p,li{
 p{
     margin: 15px auto;
 }
+.center{
+    margin: auto;
+}
 ul{
     list-style-type: none;
 }
 div{ 
     text-align: center;
 }
-li{
-    text-align: center;
+ul{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
+li{
+    display: flex;
+    text-align: center;
+    background-color: white;
+    margin: 8px;
+    border-radius: 4px;
+    max-width: 600px;
+    padding: 5px;
+    align-items: center;
+}
+i, span{
+    color: black;
+    
+    
+}
+
 #perfil{
     border-radius: 100%;
 
 }
-
+.row{
+    width: 100%;
+}
 img{
     border-radius: 5px;
 }
@@ -45,4 +72,8 @@ img{
 #apresentacao{
     text-align: justify;
     text-indent: 10%;
+}
+
+@media  (max-width: 600px) {
+    
 }
